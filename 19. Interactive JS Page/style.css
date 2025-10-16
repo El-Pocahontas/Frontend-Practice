@@ -1,0 +1,12 @@
+#tekst {
+    font-size: 20px;
+    color: darkred;
+    margin: 20px;
+}
+#przycisk {
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

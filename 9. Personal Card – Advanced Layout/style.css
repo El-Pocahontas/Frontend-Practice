@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkgrey;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    text-align: center;
+    background-color: rgb(79, 130, 3);
+    color:azure;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 5px 3px 0px rgba(36, 1, 1, 0.7);
+}
+h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    color:rgb(245, 8, 43);
+}
+section {
+    background-color:goldenrod;
+    color:rgb(2, 2, 71);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 3px 1px rgba(36, 1, 1, 0.7);
+}
+.projekty {
+    background-color: bisque;
+    color: black;
+    text-align: center;
+}
+#projekt {
+    color:black
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th,td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+th {
+    background-color: #ccc;
+}
+nav {
+    position: static;
+    background-color:black;
+    color:white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav li {
+    margin: 0;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+article {
+    background-color: blue;
+    color:rgb(244, 244, 246);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 3px 1px rgba(36, 1, 1, 0.7);
+    width:1000px;
+}
+.formularz-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    color: black;
+}
+
+#formularz {
+    flex: 1;
+    margin-left: 50px;
+}
+#zdjecie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+#zdjecie img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    max-width: 300px;
+}
+form input, form button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #0056b3;
+}

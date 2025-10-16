@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+}
+.clamp-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.clamp-section p {
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+}
+.aspect-section {
+    margin-bottom: 30px;
+}
+.aspect-box {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 16 / 9;
+    background-color: #c8e6c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #388e3c;
+}
+.container-query-section {
+    margin-bottom: 30px;
+}
+.card-container {
+    container-type: inline-size;
+    container-name: cards;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    background-color: #388e3c;
+    width: 100vw;
+}
+.card {
+    display: grid;
+    background-color: rgb(83, 92, 168);
+    border: 1px solid #981919;
+    padding: 15px;
+    border-radius: 5px;
+}
+@container cards (min-width: 600px) {
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        color: yellow;
+    }
+}
+@container cards (min-width: 900px) {
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+        color: white;
+    }
+}
+.scroll-snap-section {
+    margin-bottom: 30px;
+}
+.snap-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-align: x mandatory;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.snap-item {
+    flex: 0 0 80%;
+    height: 150px;
+    background-color: #bbdefb;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.flex-gap-section {
+    margin-bottom: 30px;
+}
+.flex-gap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.item {
+    flex: 1 1 150px;
+    background: #ffe0b2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+@media (max-width: 600px) {
+    .snap-item { flex: 0 0 90%; }
+    .item { flex: 1 1 100% }
+}

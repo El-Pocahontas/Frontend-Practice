@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.order-form {
+    max-width: 400px;
+    margin: auto;
+}
+label, select, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px;
+    background-color: #e70505;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.error {
+    color: red;
+}

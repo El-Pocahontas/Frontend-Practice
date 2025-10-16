@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt Powtórka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="burger-menu">
+          <img src="img/Hamburger_icon.svg.png" alt="Burger Menu" />
+        </div>
+        <div class="company-name">
+          <h1>Html Pizza</h1>
+        </div>
+        <div class="logo">
+          <img src="img/pizza.png" alt="Logo firmy" />
+        </div>
+      </header>
+
+      <nav class="sticky-menu">
+        <div class="menu-list">
+          <ul>
+            <li><a href="#">Zamów</a></li>
+            <li><a href="#">Promocje</a></li>
+            <li><a href="#">Najbliższy lokal</a></li>
+            <li><a href="#">Nasze składniki</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Praca</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="section-container">
+        <section class="about-us">
+          <div class="short-description">
+            <h2>Czemu Html Pizza jest najlepsza?</h2>
+            <p>
+              Dzięki naszemu sterowanemu kodem piecowi możesz wybrać odpowiednią dla siebie temperaturę!
+              <br />
+              Wybierz czas, poziom temperatury, dodzaj ciasta, grubość składników. Zobacz co jeszcze możesz
+              spersonalizować <a href="#">tutaj</a>.
+            </p>
+          </div>
+          <div class="pizza-jpg">
+            <img src="img/pizza-main.jpg" alt="Najlepsza pizza" />
+          </div>
+        </section>
+
+        <section class="solutions">
+          <div class="solution-box">
+            <div class="solution-text">
+              <h3>Najlepszy kod!</h3>
+              <p>Mamy kod idealnie współgrający z obsługą pizzerii.</p>
+            </div>
+            <div class="solution-jpg">
+              <img src="img/code.jpg" alt="zdjęcie kodu" />
+            </div>
+          </div>
+
+          <div class="solution-box">
+            <div class="solution-text">
+              <h3>Specjalny piec!</h3>
+              <p>Pozwala on na uzyskanie temperatur w przedziale od 180 do 735 stopni.</p>
+            </div>
+            <div class="solution-jpg">
+              <img src="img/oven.jpg" alt="zdjęcie pieca" />
+            </div>
+          </div>
+
+          <div class="solution-box">
+            <div class="solution-text">
+              <h3>Te produkty!</h3>
+              <p>Wszystkie produkty z organicznych hodowli i upraw.</p>
+            </div>
+            <div class="solution-jpg">
+              <img src="img/ingredients.jpg" alt="zdjęcie składników" />
+            </div>
+          </div>
+        </section>
+
+        <section class="form">
+          <h2>Napisz do nas</h2>
+          <form action="mailto:kontakt@htmlpizza.pl" method="post">
+            <!-- action poprawiony na mailto -->
+            <div class="form-box1">
+              <label for="imie">Imię:</label>
+              <input type="text" name="imie" id="imie" placeholder="Jan" required />
+
+              <label for="nazwisko">Nazwisko:</label>
+              <input type="text" name="nazwisko" id="nazwisko" placeholder="Kowalski" required />
+
+              <label for="email">Adres e-mail:</label>
+              <input type="email" name="email" id="email" placeholder="adres@email.pl" required />
+            </div>
+
+            <div class="form-box2">
+              <h3>Treść wiadomości:</h3>
+              <textarea name="wiadomosc" placeholder="Napisz do nas!" required></textarea>
+              <button type="reset">Wyczyść</button>
+              <button type="submit">Wyślij</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="opinions">
+          <div class="opinion-box">
+            <p>"Najlepsze miejsce na świecie!" - Jan Janowski</p>
+          </div>
+          <div class="opinion-box">
+            <p>"Zostałam spersonalizowana jak nigdy ;-D" - Pani Maria z osiedla</p>
+          </div>
+          <div class="opinion-box">
+            <p>"Wreszcie dzieci mają gdzie zjeść" - Karyna i bombelki</p>
+          </div>
+          <div class="opinion-box">
+            <p>"Nie rozumiem jak to działa, ale działa i jest przepysznie!" - Donald T.</p>
+          </div>
+          <div class="opinion-box">
+            <p>"USA technology I'm sure! We best!" - J. D. V.</p>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="copyright">&copy; Html Pizza</div>
+        <div class="privet">
+          <a href="#">Polityka prywatności</a>
+        </div>
+        <div class="media">
+          <a href="#"><img src="img/fb.png" alt="Logo Facebook" /></a>
+          <a href="#"><img src="img/ig.png" alt="Logo Instagram" /></a>
+          <a href="#"><img src="img/x.png" alt="Logo X" /></a>
+          <a href="#"><img src="img/yt.png" alt="Logo Youtube" /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

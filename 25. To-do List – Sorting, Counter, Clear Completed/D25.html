@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>D25 - To-do List - Sortowanie, licznik i czyszczenie zadań</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="todo-container">
+            <h1>Moja lista zadań</h1>
+            <form id="todo-form">
+                <input type="text" id="task-input" placeholder="Wpisz nowe zadanie..." required>
+                <button type="submit">Dodaj</button>
+            </form>
+
+            <ul id="task-list"></ul>
+        </div>
+
+        <div id="controls">
+            <span id="task-counter">0 zadań</span>
+            <button id="clear-completed">Usuń ukończone</button>
+            <button id="sort-tasks">Sortuj</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

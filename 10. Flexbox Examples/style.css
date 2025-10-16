@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    color:#333;
+}
+main section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.box-container {
+    display: flex;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 100px;
+    gap: 10px;
+}
+.box {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    flex: 0 0 80px;
+}
+.one-box {
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.row-boxes {
+    flex-direction: row-reverse;
+}
+.column-boxes {
+    flex-direction: column;
+}
+.justify-between {
+    justify-content: space-between; 
+}
+.align-end {
+    align-items: flex-end;
+}
+.tall {
+    height: 100px;
+}
+.medium {
+    height: 60px;
+}
+.wrap-boxes {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 300px;
+}
+.order-boxes {
+    justify-content: center;
+}
+.grow-boxes {
+    width: 100%;
+}
+.grow1 {
+    flex-grow: 1;
+}
+.grow2 {
+    flex-grow: 5;
+}

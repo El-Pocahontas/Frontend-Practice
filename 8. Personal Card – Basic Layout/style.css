@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkgrey;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    text-align: center;
+    background-color: rgb(79, 130, 3);
+    color:azure;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 5px 3px 0px rgba(36, 1, 1, 0.7);
+}
+h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    color:rgb(245, 8, 43);
+}
+section {
+    background-color:goldenrod;
+    color:rgb(2, 2, 71);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 3px 1px rgba(36, 1, 1, 0.7);
+    width: 1230px;
+}
+.projekty {
+    background-color: bisque;
+    color: black;
+    text-align: center;
+}
+#projekt {
+    color:black
+}
+table {
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    position: absolute;
+    background-color:black;
+    color:white;
+    width: 200px;
+    padding: 3px;
+    margin-left: 1300px;
+    border-radius: 8px;
+    height: 1000px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color:white;
+}
+article {
+    background-color: blue;
+    color:rgb(244, 244, 246);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 3px 1px rgba(36, 1, 1, 0.7);
+    width: 1230px;
+}
+#zdjecie {
+    float: right;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formularz</title>
+    </head>
+    <body>
+        <h1>Formularz osobowy</h1>
+    <!--Nick,Wiek, Data urodzenia, Płeć, Adres e-mail, 
+    Numer telefonu, Twoja strona, Ręka dominująca, 
+    Ulubiony kolor, Hobby, Twoje zdjęcie, Opisz się, 
+    Przycisk reset, Przycisk wyślij -->
+        <form action="form.html" method="POST" enctype="multipart/form-data">
+            <label for="imie">Imię:</label>
+            <input type="text" mame="imie" id="imie" placeholder="Wpisz imię" required>
+            <br>
+            <label for="haslo">Hasło:</label>
+            <input type="password" name="haslo" id="haslo">
+            <br>
+            <label for="wiek">Wiek:</label>
+            <input type="number" name="wiek" id="wiek" min="1" max="130" step="10">
+            <br>
+            <label for="urodzenie">Data urodzenia:</label>
+            <input type="date" name="urodzenie" id="urodzenie" min="2000-01-01">
+            <br>
+            Płeć:
+            <br>
+            <label for="mezczyzna">Mężczyzna</label>
+            <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">
+            <br>
+            <label for="kobieta">Kobieta</label>
+            <input type="radio" name="plec" id="kobieta" value="kobieta">
+            <br>
+            <label for="email">Adres e-mail:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="telefon">Numer telefonu:</label>
+            <input type="tel" name="telefon" id="telefon">
+            <br>
+            <label for="www">Twoja strona:</label>
+            <input type="url" name="www" id="www">
+            <br>
+            <label for="reka">Dominująca ręka:</label>
+            <select name="reka" id="reka" multiple>
+                <option lebel="prawa" value="prawa">Prawa</option>
+                <option label="lewa" value="lewa">Lewa</option>
+            </select>
+            <br>
+            <label for="kolor">Ulubiony kolor:</label>
+            <input type="color" name="kolor" id="kolor">
+            <br>
+            Hobby:
+            <br>
+            <label for="muzyka">Muzyka</label>
+            <input type="checkbox" name="muzyka" id="muzyka">
+            <br>
+            <label for="sport">Sport</label>
+            <input type="checkbox" name="sport" id="sport">
+            <br>
+            <label for="czytanie">Czytanie</label>
+            <input type="checkbox" name="czytanie" id="czytanie">
+            <br>
+            <label for="plik">Dodaj zdjęcie:</label>
+            <input type="file" name="plik" id="plik">
+            <br>
+            <label for="opis">Opisz się:</label>
+            <textarea name="opis" id="opis"></textarea>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Potwierdź</button>
+        </form>
+    </body>
+</html>

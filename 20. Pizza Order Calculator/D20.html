@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator zamówienia</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Kalkulator zamówienia pizzy</h1>
+        <form class="order-form" id="pizzaForm">
+            <label for="size">Wybierz rozmiar:</label>
+            <select id="size" required>
+                <option value="">-- wybierz --</option>
+                <option value="30">Mała (30 cm)</option>
+                <option value="40">Średnia (40 cm)</option>
+                <option value="50">Duża (50 cm)</option>
+            </select>
+            <label for="quantity">Ilość sztuk:</label>
+            <input type="number" id="quantity" min="1" placeholder="2" required>
+            <button type="submit">Oblicz cenę</button>
+        </form>
+        <div id="result"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.sticky-menu {
+    position: sticky;
+    top: 0px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+main {
+    padding: 20px;
+}
+.relative-box {
+    position: relative;
+    top: 20px;
+    background-color: lightblue;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.absolute-box {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    width: 200px;
+    padding: 20px;
+    background-color: pink;
+}
+.transparent-box {
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 400px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}

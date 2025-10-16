@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Grid - Wszystkie kluczowe układy i zachowania</h1>
+        <p>W tej lekcji nauczysz się tworzyć różne układy elementów za pomocą CSS Grid. Każdy przykład pokazuje inną funkcję i możliwości siatki.</p>
+        <ol>
+            <li>Prosta siatka 2x2</li>
+            <li>Grid z nazwanymi obszarami</li>
+            <li>Grid z różnymi rozmiarami kolumn i wierszy</li>
+            <li>Ustawienie odstępów: gap</li>
+            <li>Rozciąganie elementów: justify-items, align-items</li>
+            <li>Umieszczanie elementów: justify-self, align-self</li>
+            <li>Pozycjonowanie: grid-row, grid-column</li>
+            <li>Automatyczne rozmieszczanie elementów: auto-fill i auto-fit</li>
+            <li>repeat(), minmax(), fr - jednostki i funkcje</li>
+        </ol>
+    </header>
+    <main>
+        <section class="grid-example simple-grid">
+            <h2>1. Prosta siatka 2x2</h2>
+            <div class="grid-container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </section>
+        <section class="grid-example named-areas">
+            <h2>2. Grid z nazwami obrzarowymi</h2>
+            <div class="grid-named">
+                <div class="header">Header</div>
+                <div class="menu">Menu</div>
+                <div class="content">Content</div>
+                <div class="footer">Footer</div>
+            </div>
+        </section>
+        <section class="grid-example variable-size">
+            <h2>3. Różne rozmiary kolumn i wierszy</h2>
+            <div class="grid-variable">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+            </div>
+        </section>
+        <section class="grid-example with-gap">
+            <h2>4. Ustawianie odstępów: gap</h2>
+            <div class="grid-gap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </section>
+        <section class="grid-example align-items">
+            <h2>5. Rozciąganie elementów: justify-items, align-items</h2>
+            <div class="grid-align-items">
+                <div class="item">X</div>
+                <div class="item">Y</div>
+            </div>
+        </section>
+        <section class="grid-example self-alignment">
+            <h2>6. Umieszczanie elementów: justify-self, align-self</h2>
+            <div class="grid-self-align">
+                <div class="item self-center">1</div>
+                <div class="item">2</div>
+            </div>
+        </section>
+        <section class="grid-example grid-position">
+            <h2>7. Pozycjonowanie: grid-row, grid-cplumn</h2>
+            <div class="grid-positioning">
+                <div class="item pos1">1</div>
+                <div class="item pos2">2</div>
+                <div class="item pos3">3</div>
+            </div>
+        </section>
+        <section class="grid-example auto-fill-fit">
+            <h2>8. Automatyczne rozmieszczanie elementów: auto-fill i auto-fit</h2>
+            <div class="grid-auto">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+            </div>
+        </section>
+        <section class="grid-example repeat-minmax">
+            <h2>9. repeat(), minmax(), fr - jednostki i funkcje</h2>
+            <div class="grid-repeat">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

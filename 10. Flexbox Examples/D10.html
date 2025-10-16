@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flexbox</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <header>
+            <h1>Flexbox - wszystkie kluczowe układy i zachowania</h1>
+            <p>W tej lekcji nauczysz się tworzyć różne układy pudełek (elementów) za pomocą CSS Flexbox. Poniżej znajduje się lista demonstracyjnych sekcji.</p>
+            <ol>
+                <li>Jedno pudełko - wyrównanie w kontenerze</li>
+                <li>Trzy pudełka - w poziomie i w pionie</li>
+                <li>Użycie 'flex-direction': row, column, row-reverse, column-reverse</li>
+                <li>'justify-content' - wyrównanie wzdłuż głównej osi</li>
+                <li>'align-item' - wyrównanie wzdłuż osi poprzecznej</li>
+                <li>'flex-wrap' i łamanie wierszy</li>
+                <li>'align-content' wiele wierszy</li>
+                <li>'order' - zmiana kolejności</li>
+                <li>'flex-grow', 'flex-shrink', 'flex-basis' - rozciąganie i kurczenie</li>
+            </ol>
+        </header>
+        <main>
+            <section>
+                <h2>1. Jedno pudełko - wyśrodkowanie</h2>
+                <div class="box-container one-box">
+                    <div class="box">1</div>
+                </div>
+            </section>
+            <section>
+                <h2>2.Trzy pudełka w poziomie</h2>
+                <div class="box-container row-boxes">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                </div>
+            </section>
+            <section>
+                <h2>3.Trzy pudełka w kolumnie</h2>
+                <div class="box-container column-boxes">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                </div>
+            </section>
+            <section>
+                <h2>4.justify-content: space-between</h2>
+                <div class="box-container justify-between">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                </div>
+            </section>
+            <section>
+                <h2>5.align-items: flex-end</h2>
+                <div class="box-container align-end">
+                    <div class="box tall">1</div>
+                    <div class="box">2</div>
+                    <div class="box medium">3</div>
+                </div>
+            </section>
+            <section>
+                <h2>6.flex wrap i dwa rzędy</h2>
+                <div class="box-container wrap-boxes">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                    <div class="box">6</div>
+                </div>
+            </section>
+            <section>
+                <h2>7.align-content: space-around</h2>
+                <div class="box-container align-content">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
+                    <div class="box">5</div>
+                    <div class="box">6</div>
+                </div>
+            </section>
+            <section>
+                <h2>8.order -zmiana kolejności</h2>
+                <div class="box-container order-boxes">
+                    <div class="box" style="order">1</div>
+                    <div class="box" style="order">2</div>
+                    <div class="box" style="order">3</div>
+                </div>
+            </section>
+            <section>
+                <h2>9.flex-grow i flex-shrink</h2>
+                <div class="box-container grow-boxes">
+                    <div class="box grow1">1</div>
+                    <div class="box grow2">2</div>
+                    <div class="box grow3">3</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
